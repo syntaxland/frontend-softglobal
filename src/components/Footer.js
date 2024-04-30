@@ -1,36 +1,40 @@
 // Footer.js
-import React, { useState } from "react";
-import { Row, Col, Modal, Button } from "react-bootstrap";
-import { useSelector } from "react-redux";
-import OtpDisableAccountFund from "./settings/OtpDisableAccountFund";
+import React, { 
+  // useState
+ } from "react";
+import { Row, Col, 
+  // Modal, Button 
+} from "react-bootstrap";
+// import { useSelector } from "react-redux";
+// import OtpDisableAccountFund from "./settings/OtpDisableAccountFund";
 
 function Footer() {
-  const userLogin = useSelector((state) => state.userLogin);
-  const { userInfo } = userLogin;
+  // const userLogin = useSelector((state) => state.userLogin);
+  // const { userInfo } = userLogin;
   const currentYear = new Date().getFullYear();
-  const [showSetMaxFund, setShowSetMaxFund] = useState(false);
+  // const [showSetMaxFund, setShowSetMaxFund] = useState(false);
 
-  const handleSetMaxFundOpen = () => {
-    setShowSetMaxFund(true);
-  };
+  // const handleSetMaxFundOpen = () => {
+  //   setShowSetMaxFund(true);
+  // };
 
-  const handleSetMaxFundClose = () => {
-    setShowSetMaxFund(false);
-  };
+  // const handleSetMaxFundClose = () => {
+  //   setShowSetMaxFund(false);
+  // };
 
-  const softGlobalLink = () => {
-    window.location.href = "http://softglobal.org";
-  };
+  // const softGlobalLink = () => {
+  //   window.location.href = "http://softglobal.org";
+  // };
 
   return (
     // <footer className="text-light footer custom-dark-blue">
     <footer
       className="text-light footer custom-dark-blue py-2"
-      style={{ backgroundColor: "#6495ED", color: "white" }}
+      style={{ backgroundColor: "#00BFFF", color: "white" }}
     >
       <Row>
         <Col>
-          <Row>
+          {/* <Row>
             <Col className="text-muted py-2 text-center">
               <ul style={{ fontSize: "12px", color: "white" }}>
                 <strong>Offices:</strong> Lagos (<strong>Coming soon:</strong>{" "}
@@ -40,9 +44,9 @@ function Footer() {
                 
               </ul>
             </Col>
-          </Row>
+          </Row> */}
 
-          {!userInfo ? (
+          {/* {!userInfo ? (
             <Row>
               <Col className="d-flex justify-content-center text-center py-2">
                 <p>
@@ -72,17 +76,17 @@ function Footer() {
                 </Modal>
               </Col>
             </Row>
-          ) : null}
+          ) : null} */}
 
           <Row>
             <Col className="text-center py-2">
               <p>
-                &copy; Paysofter Inc, {currentYear}. |{" "}
-                <i>For a softer payment experience...</i>
+                &copy; SoftGlobal Inc, {currentYear}. |{" "}
+                <i>+2349066167293</i>
                 {/* <i>A payment solution for all humans...</i> */}
               </p>
 
-              <p>
+              {/* <p>
                 <Button
                   variant="outline-transparent"
                   className="rounded"
@@ -92,7 +96,7 @@ function Footer() {
                     Powered by SoftGlobal
                   </i>
                 </Button>{" "}
-              </p>
+              </p> */}
             </Col>
           </Row>
         </Col>

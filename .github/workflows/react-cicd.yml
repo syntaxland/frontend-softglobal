@@ -12,7 +12,7 @@ jobs:
       BUCKET: paysofter.com
       DIST: build
       REGION: us-east-1
-      DIST_ID: E1VNQUF79YYYYY
+      DIST_ID: E1AJATX5625FQL
 
     steps:
     - name: Checkout

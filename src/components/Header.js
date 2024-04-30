@@ -145,7 +145,7 @@ function Header() {
             className="custom-dark-blue"
             expand="md"
             sticky="top"
-            style={{ backgroundColor: '#6495ED' }}
+            style={{ backgroundColor: '#00BFFF' }}
           >
             <Container fluid>
               <Navbar.Brand as={Link} to="/">
@@ -195,17 +195,17 @@ function Header() {
                         className="fas fa-dashboard"
                         style={{ fontSize: "16px" }}
                       ></i>{" "}
-                      Dashboard
+                      {/* Dashboard */}
                     </Nav.Link>
                   ) : (
                     <span>
-                      <Nav.Link as={Link} to="/login">
+                      {/* <Nav.Link as={Link} to="/login">
                         <i
                           className="fas fa-dashboard"
                           style={{ fontSize: "16px" }}
                         ></i>{" "}
                         Dashboard
-                      </Nav.Link>
+                      </Nav.Link> */}
                     </span>
                   )}
 
