@@ -9,7 +9,7 @@ jobs:
     name: Build and Deploy
     runs-on: ubuntu-latest
     env:
-      BUCKET: paysofter.com
+      BUCKET: softglobal.com
       DIST: build
       REGION: us-east-1
       DIST_ID: E1AJATX5625FQL
