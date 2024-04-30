@@ -112,4 +112,3 @@ function HomeScreen({ history }) {
 }
 
 export default HomeScreen;
-
