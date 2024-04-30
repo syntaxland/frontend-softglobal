@@ -17,6 +17,6 @@ phases:
   post_build:
     commands:
     - echo "Copying build to S3 bucket..."
-    - aws s3 cp --debug --recursive ./build s3://softglobal.com/
+    - aws s3 cp --debug --recursive ./build s3://softglobal.org/
     - aws cloudfront create-invalidation --distribution-id E1AJATX5625FQL --path /\* 
   
