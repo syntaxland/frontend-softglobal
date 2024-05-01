@@ -84,19 +84,20 @@ function HomeScreen({ history }) {
           </div>
 
           <hr />
-          <h1 className="py-3">Our Companies and Partners</h1>
+          <h1 className="py-3 text-center">Our Companies and Partners</h1>
           <hr />
 
           <Row>
             {companies.map((company, index) => (
               <Col key={index} md={4}>
-                <Card className="mb-3">
+                <Card className="mb-3 text-center">
                   <Card.Body>
                     <Card.Title>{company.name}</Card.Title>
                     <Card.Text>{company.description}</Card.Text>
                     <Button
                       variant="primary"
-                      size="sm"
+                      // size="sm"
+                      className="rounded w-100"
                       onClick={() => window.open(company.url, "_blank")}
                     >
                       Visit {company.name}
