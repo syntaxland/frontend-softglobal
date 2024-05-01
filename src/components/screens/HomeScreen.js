@@ -21,7 +21,7 @@ const companies = [
   {
     name: "McDofShop",
     description:
-      "Experience the convenience of online shopping with McDofShop, your go-to destination for a wide range of products, from electronics to fashion.",
+      "Experience the convenience of online shopping with McDofShop, your go-to destination for a wide range of products, from building materials, electronics to fashion.",
     url: "https://www.mcdofshop.com",
   },
 ];
@@ -51,7 +51,7 @@ function HomeScreen({ history }) {
         <Col>
           <div className="text-center">
             <hr />
-            <h1 className="py-3">Welcome to Softglobal.org</h1>
+            <h1 className="py-3">Welcome to Softglobal!</h1>
             <hr />
             <p>
               Discover our family of innovative companies and experience a
