@@ -3,7 +3,8 @@ import React, {
   // useState
  } from "react";
 import { Row, Col, 
-  // Modal, Button 
+  // Modal, 
+  Button 
 } from "react-bootstrap";
 // import { useSelector } from "react-redux";
 // import OtpDisableAccountFund from "./settings/OtpDisableAccountFund";
@@ -81,22 +82,20 @@ function Footer() {
           <Row>
             <Col className="text-center py-2">
               <p>
-                &copy; SoftGlobal Inc, {currentYear}. |{" "}
-                <i>+2349066167293</i>
-                {/* <i>A payment solution for all humans...</i> */}
+                &copy; SoftGlobal Inc, {currentYear}. |{" "} All rights reserved.
               </p>
 
-              {/* <p>
+              <p>
                 <Button
                   variant="outline-transparent"
                   className="rounded"
-                  onClick={softGlobalLink}
+                  // onClick={softGlobalLink}
                 >
                   <i style={{ fontSize: "12px", color: "white" }}>
-                    Powered by SoftGlobal
+                    +2349066167293
                   </i>
                 </Button>{" "}
-              </p> */}
+              </p>
             </Col>
           </Row>
         </Col>
