@@ -47,7 +47,7 @@ function HomeScreen({ history }) {
 
   return (
     <Container>
-      <Row>
+      <Row className="d-flex justify-content-center">
         <Col>
           <div className="text-center">
             <hr />
@@ -62,13 +62,12 @@ function HomeScreen({ history }) {
               className="rounded"
               size="sm"
               onClick={() => history.push("/about")}
+              disabled
             >
               Learn More
             </Button>
           </div>
 
-          <hr />
-          <h1 className="py-3">Our Companies and Partners</h1>
           <hr />
 
           <div>
@@ -84,6 +83,8 @@ function HomeScreen({ history }) {
             </Slider>
           </div>
 
+          <hr />
+          <h1 className="py-3">Our Companies and Partners</h1>
           <hr />
 
           <Row>
