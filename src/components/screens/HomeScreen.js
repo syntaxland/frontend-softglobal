@@ -54,8 +54,8 @@ function HomeScreen({ history }) {
             <h1 className="py-3">Welcome to Softglobal!</h1>
             <hr />
             <p>
-              Discover our family of innovative companies and experience a
-              softer way of doing business.
+              Discover our family of innovative companies, partners and
+              experience a softer way of doing business.
             </p>
             <Button
               variant="primary"
@@ -67,6 +67,8 @@ function HomeScreen({ history }) {
             </Button>
           </div>
 
+          <hr />
+          <h1 className="py-3">Our Companies and Partners</h1>
           <hr />
 
           <div>
