@@ -4,6 +4,8 @@ import { Row, Col, Button, Container, Card } from "react-bootstrap";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AndriodImage from "../../images/andriod.jpg";
+import IosImage from "../../images/ios.jpg";
 
 const companies = [
   {
@@ -11,18 +13,30 @@ const companies = [
     description:
       "Empowering seamless and secure global payments, PaySofter offers a softer payment experience for individuals and businesses alike.",
     url: "https://www.paysofter.com",
+    androidLink:
+      "https://play.google.com/store/apps/details?id=com.jondebosco.paysofter",
+    iosLink:
+      "https://apps.apple.com/store/apps/details?id=com.jondebosco.paysofter",
   },
   {
     name: "SellAngle",
     description:
       "An innovative online marketplace, SellAngle provides a platform for sellers and buyers to connect, trade, and thrive in today's digital economy.",
     url: "https://www.sellangle.com",
+    androidLink:
+      "https://play.google.com/store/apps/details?id=com.jondebosco.sellangle",
+    iosLink:
+      "https://apps.apple.com/store/apps/details?id=com.jondebosco.sellangle",
   },
   {
     name: "McDofShop",
     description:
       "Experience the convenience of online shopping with McDofShop, your go-to destination for a wide range of products, from building materials, electronics to fashion.",
     url: "https://www.mcdofshop.com",
+    androidLink:
+      "https://play.google.com/store/apps/details?id=com.jondebosco.mcdofshop",
+    iosLink:
+      "https://apps.apple.com/store/apps/details?id=com.jondebosco.mcdofshop",
   },
 ];
 
@@ -96,12 +110,32 @@ function HomeScreen({ history }) {
                     <Card.Text>{company.description}</Card.Text>
                     <Button
                       variant="primary"
-                      // size="sm"
                       className="rounded w-100"
                       onClick={() => window.open(company.url, "_blank")}
                     >
                       Visit {company.name}
                     </Button>
+                    <hr />
+                    <div
+                      onClick={() => window.open(company.androidLink, "_blank")}
+                      style={{ cursor: "pointer" }}
+                    >
+                      <Card.Img
+                        src={AndriodImage}
+                        alt="Download on Android"
+                        style={{ width: 180, height: 40, marginBottom: 10 }}
+                      />
+                    </div>
+                    <div
+                      // onClick={() => window.open(company.iosLink, "_blank")}
+                      style={{ cursor: "pointer" }}
+                    >
+                      <Card.Img
+                        src={IosImage}
+                        alt="Download on iOS"
+                        style={{ width: 180, height: 40 }}
+                      />
+                    </div>
                   </Card.Body>
                 </Card>
               </Col>

@@ -113,14 +113,13 @@ function Header() {
   };
 
   useEffect(() => {
-    // Determine the greeting based on the current hour
     const currentHour = new Date().getHours();
-    if (currentHour >= 5 && currentHour < 12) {
-      setGreeting(`Good Morning!`);
+    if (currentHour >= 0 && currentHour < 12) {
+      setGreeting("Good morning!");
     } else if (currentHour >= 12 && currentHour < 18) {
-      setGreeting(`Good Afternoon!`);
+      setGreeting("Good afternoon!");
     } else {
-      setGreeting(`Good Evening!`);
+      setGreeting("Good evening!");
     }
   }, []);
 
