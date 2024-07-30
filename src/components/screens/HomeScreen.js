@@ -12,7 +12,7 @@ const companies = [
     name: "PaySofter",
     description:
       "Empowering seamless and secure global payments, PaySofter offers a softer payment experience for individuals and businesses alike.",
-    url: "https://www.paysofter.com",
+    url: "https://paysofter.com",
     androidLink:
       "https://play.google.com/store/apps/details?id=com.jondebosco.paysofter",
     iosLink:
@@ -22,7 +22,7 @@ const companies = [
     name: "SellAngle",
     description:
       "An innovative online marketplace, SellAngle provides a platform for sellers and buyers to connect, trade, and thrive in today's digital economy.",
-    url: "https://www.sellangle.com",
+    url: "https://sellangle.com",
     androidLink:
       "https://play.google.com/store/apps/details?id=com.jondebosco.sellangle",
     iosLink:
@@ -32,7 +32,7 @@ const companies = [
     name: "McDofShop",
     description:
       "Experience the convenience of online shopping with McDofShop, your go-to destination for a wide range of products, from building materials, electronics to fashion.",
-    url: "https://www.mcdofshop.com",
+    url: "https://mcdofshop.com",
     androidLink:
       "https://play.google.com/store/apps/details?id=com.jondebosco.mcdofshop",
     iosLink:
