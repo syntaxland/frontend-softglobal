@@ -4,7 +4,7 @@ import React, {
  } from "react";
 import { Row, Col, 
   // Modal, 
-  Button 
+  // Button 
 } from "react-bootstrap";
 // import { useSelector } from "react-redux";
 // import OtpDisableAccountFund from "./settings/OtpDisableAccountFund";
@@ -86,15 +86,17 @@ function Footer() {
               </p>
 
               <p>
-                <Button
+                {/* <Button
                   variant="outline-transparent"
                   className="rounded"
-                  // onClick={softGlobalLink}
                 >
                   <i style={{ fontSize: "12px", color: "white" }}>
                     +2349066167293
                   </i>
-                </Button>{" "}
+                </Button>{" "} */}
+                <i style={{ fontSize: "12px"}}>
+                  +2349066167293
+                </i>
               </p>
             </Col>
           </Row>
